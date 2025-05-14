@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Event Playground</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Interactive JavaScript Playground</h1>
+    <p>Event Handling, Gallery, Accordion & Form Validation</p>
+  </header>
+
+  <main>
+    <!-- Event Section -->
+    <section>
+      <h2>1. Event Handling</h2>
+      <button id="colorBtn">Click Me!</button>
+      <div id="hoverBox">Hover Over Me</div>
+      <input type="text" id="keyInput" placeholder="Press any key" />
+      <div id="dblBox">Double-Click Me</div>
+    </section>
+
+    <!-- Image Gallery -->
+    <section>
+      <h2>2. Image Gallery</h2>
+      <div id="gallery">
+        <img src="img1.jpg" alt="Image 1" class="gallery-img">
+        <img src="img2.jpg" alt="Image 2" class="gallery-img" style="display:none;">
+        <button id="prev">Prev</button>
+        <button id="next">Next</button>
+      </div>
+    </section>
+
+    <!-- Accordion -->
+    <section>
+      <h2>3. Accordion Sections</h2>
+      <div class="accordion">Section A</div>
+      <div class="panel">Content for section A.</div>
+      <div class="accordion">Section B</div>
+      <div class="panel">Content for section B.</div>
+    </section>
+
+    <!-- Form Validation -->
+    <section>
+      <h2>4. Form Validation</h2>
+      <form id="signupForm" novalidate>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <span id="emailError"></span>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <span id="passError"></span>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 JS Playground</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
